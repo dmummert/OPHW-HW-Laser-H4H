@@ -24589,12 +24589,6 @@ package type SO</description>
 <part name="R29" library="resistor" deviceset="R-EU_" device="M1206"/>
 <part name="FZP" library="led" deviceset="LED" device="3MM"/>
 <part name="R30" library="resistor" deviceset="R-EU_" device="M1206"/>
-<part name="FD1" library="led" deviceset="LED" device="3MM"/>
-<part name="R31" library="resistor" deviceset="R-EU_" device="M1206"/>
-<part name="FD2" library="led" deviceset="LED" device="3MM"/>
-<part name="R32" library="resistor" deviceset="R-EU_" device="M1206"/>
-<part name="FCH" library="led" deviceset="LED" device="3MM"/>
-<part name="R33" library="resistor" deviceset="R-EU_" device="M1206"/>
 <part name="ZSTEP" library="con-wago-500" deviceset="W237-102" device=""/>
 <part name="ZDIR" library="con-wago-500" deviceset="W237-102" device=""/>
 <part name="YSTEP" library="con-wago-500" deviceset="W237-102" device=""/>
@@ -24860,12 +24854,6 @@ Function on its own</text>
 <instance part="R29" gate="G$1" x="332.74" y="58.42" rot="R180"/>
 <instance part="FZP" gate="G$1" x="340.36" y="50.8" rot="R90"/>
 <instance part="R30" gate="G$1" x="332.74" y="50.8" rot="R180"/>
-<instance part="FD1" gate="G$1" x="340.36" y="38.1" rot="R90"/>
-<instance part="R31" gate="G$1" x="332.74" y="38.1" rot="R180"/>
-<instance part="FD2" gate="G$1" x="340.36" y="30.48" rot="R90"/>
-<instance part="R32" gate="G$1" x="332.74" y="30.48" rot="R180"/>
-<instance part="FCH" gate="G$1" x="340.36" y="22.86" rot="R90"/>
-<instance part="R33" gate="G$1" x="332.74" y="22.86" rot="R180"/>
 <instance part="ZSTEP" gate="-1" x="431.8" y="76.2"/>
 <instance part="ZSTEP" gate="-2" x="431.8" y="71.12"/>
 <instance part="ZDIR" gate="-1" x="431.8" y="66.04"/>
@@ -25189,11 +25177,6 @@ Function on its own</text>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="279.4" y1="66.04" x2="276.86" y2="66.04" width="0.1524" layer="91"/>
 <label x="271.78" y="66.04" size="1.778" layer="95" font="vector" ratio="10"/>
-</segment>
-<segment>
-<pinref part="FCH" gate="G$1" pin="C"/>
-<wire x1="345.44" y1="22.86" x2="347.98" y2="22.86" width="0.1524" layer="91"/>
-<label x="337.82" y="22.86" size="1.778" layer="95" font="vector" ratio="10"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="(PCI21/T1/OC0B)PD5"/>
@@ -25865,21 +25848,6 @@ Function on its own</text>
 <label x="320.04" y="50.8" size="1.778" layer="95" font="vector" ratio="10"/>
 </segment>
 <segment>
-<pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="327.66" y1="38.1" x2="325.12" y2="38.1" width="0.1524" layer="91"/>
-<label x="320.04" y="38.1" size="1.778" layer="95" font="vector" ratio="10"/>
-</segment>
-<segment>
-<pinref part="R32" gate="G$1" pin="2"/>
-<wire x1="327.66" y1="30.48" x2="325.12" y2="30.48" width="0.1524" layer="91"/>
-<label x="320.04" y="30.48" size="1.778" layer="95" font="vector" ratio="10"/>
-</segment>
-<segment>
-<pinref part="R33" gate="G$1" pin="2"/>
-<wire x1="327.66" y1="22.86" x2="325.12" y2="22.86" width="0.1524" layer="91"/>
-<label x="320.04" y="22.86" size="1.778" layer="95" font="vector" ratio="10"/>
-</segment>
-<segment>
 <wire x1="238.76" y1="38.1" x2="231.14" y2="38.1" width="0.1524" layer="91"/>
 <label x="231.14" y="38.1" size="1.778" layer="95"/>
 <pinref part="5V" gate="-1" pin="KL"/>
@@ -25980,11 +25948,6 @@ Function on its own</text>
 <junction x="391.16" y="66.04"/>
 <pinref part="DOOR1" gate="-2" pin="KL"/>
 </segment>
-<segment>
-<pinref part="FD1" gate="G$1" pin="C"/>
-<wire x1="345.44" y1="38.1" x2="347.98" y2="38.1" width="0.1524" layer="91"/>
-<label x="347.98" y="38.1" size="1.778" layer="95" font="vector" ratio="10"/>
-</segment>
 </net>
 <net name="DOOR2" class="0">
 <segment>
@@ -25999,11 +25962,6 @@ Function on its own</text>
 <wire x1="391.16" y1="38.1" x2="391.16" y2="40.64" width="0.1524" layer="91"/>
 <junction x="391.16" y="38.1"/>
 <pinref part="DOOR2" gate="-2" pin="KL"/>
-</segment>
-<segment>
-<pinref part="FD2" gate="G$1" pin="C"/>
-<wire x1="345.44" y1="30.48" x2="347.98" y2="30.48" width="0.1524" layer="91"/>
-<label x="347.98" y="30.48" size="1.778" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
 <net name="LASER_PROT" class="0">
@@ -26191,24 +26149,6 @@ Function on its own</text>
 <segment>
 <pinref part="FZP" gate="G$1" pin="A"/>
 <pinref part="R30" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="FD1" gate="G$1" pin="A"/>
-<pinref part="R31" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="FD2" gate="G$1" pin="A"/>
-<pinref part="R32" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="FCH" gate="G$1" pin="A"/>
-<pinref part="R33" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$30" class="0">

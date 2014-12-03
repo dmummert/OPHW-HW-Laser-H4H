@@ -24690,12 +24690,13 @@ package type SO</description>
 <text x="408.94" y="193.04" size="1.778" layer="95">Endstops</text>
 <wire x1="312.42" y1="-5.08" x2="365.76" y2="-5.08" width="0.1524" layer="95"/>
 <wire x1="365.76" y1="-5.08" x2="414.02" y2="-5.08" width="0.1524" layer="95"/>
-<wire x1="609.6" y1="93.98" x2="500.38" y2="93.98" width="0.1524" layer="95"/>
-<wire x1="454.66" y1="-5.08" x2="695.96" y2="-5.08" width="0.1524" layer="95"/>
-<text x="604.52" y="-2.54" size="1.778" layer="95">NAND</text>
-<text x="546.1" y="20.32" size="1.778" layer="95" rot="R180">Door = closed then door sensor must output HIGH</text>
-<text x="490.22" y="15.24" size="1.778" layer="95">into DOOR1 and DOOR2</text>
-<text x="505.46" y="68.58" size="1.778" layer="95">LIMITS must be HIGH when not triggered</text>
+<wire x1="609.6" y1="93.98" x2="538.48" y2="93.98" width="0.1524" layer="95"/>
+<wire x1="538.48" y1="93.98" x2="500.38" y2="93.98" width="0.1524" layer="95"/>
+<wire x1="454.66" y1="-5.08" x2="538.48" y2="-5.08" width="0.1524" layer="95"/>
+<text x="530.86" y="20.32" size="1.778" layer="95" rot="R180">Door = closed then door sensor must output HIGH</text>
+<text x="497.84" y="15.24" size="1.778" layer="95">into DOOR1 and DOOR2</text>
+<text x="459.74" y="88.9" size="1.778" layer="95">LIMITS must be HIGH when not triggered</text>
+<wire x1="538.48" y1="-5.08" x2="695.96" y2="-5.08" width="0.1524" layer="95"/>
 <wire x1="609.6" y1="195.58" x2="609.6" y2="93.98" width="0.1524" layer="95"/>
 <wire x1="609.6" y1="93.98" x2="695.96" y2="93.98" width="0.1524" layer="95"/>
 <wire x1="695.96" y1="93.98" x2="695.96" y2="195.58" width="0.1524" layer="95"/>
@@ -24761,6 +24762,16 @@ package type SO</description>
 <wire x1="142.24" y1="27.94" x2="213.36" y2="27.94" width="0.1524" layer="95"/>
 <wire x1="213.36" y1="27.94" x2="213.36" y2="53.34" width="0.1524" layer="95"/>
 <wire x1="213.36" y1="27.94" x2="213.36" y2="-5.08" width="0.1524" layer="95"/>
+<wire x1="538.48" y1="93.98" x2="538.48" y2="-5.08" width="0.1524" layer="95"/>
+<text x="518.16" y="-2.54" size="2.1844" layer="95">AND GATE</text>
+<text x="543.56" y="-2.54" size="2.1844" layer="95">NAND GATE</text>
+<text x="624.84" y="101.6" size="2.1844" layer="95">MOSFET Drive for Solenoid Valve</text>
+<text x="508" y="198.12" size="2.1844" layer="95">2nd ATmega to drive
+GLCD / SD Card
+Monitor all sensors and report onscreen
+Drive I2C Button Panel
+Softserial + Serial to either intercept LasaurApp or 
+Function on its own</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="337.82" y="134.62"/>
@@ -25419,8 +25430,7 @@ package type SO</description>
 <pinref part="V1" gate="/-UB" pin="-UB"/>
 <wire x1="467.36" y1="7.62" x2="467.36" y2="2.54" width="0.1524" layer="91"/>
 <label x="459.74" y="2.54" size="1.778" layer="95"/>
-<wire x1="467.36" y1="7.62" x2="467.36" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="467.36" y1="22.86" x2="459.74" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="467.36" y1="7.62" x2="467.36" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <junction x="467.36" y="2.54"/>
 <label x="459.74" y="27.94" size="1.778" layer="95" rot="R90"/>
@@ -25951,7 +25961,6 @@ package type SO</description>
 <wire x1="480.06" y1="38.1" x2="477.52" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="477.52" y1="38.1" x2="474.98" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="477.52" y1="38.1" x2="472.44" y2="38.1" width="0.1524" layer="91"/>
-<label x="469.9" y="38.1" size="1.778" layer="95"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <junction x="477.52" y="38.1"/>
 </segment>
@@ -26702,4 +26711,10 @@ package type SO</description>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

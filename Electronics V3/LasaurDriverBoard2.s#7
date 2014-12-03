@@ -24644,6 +24644,14 @@ package type SO</description>
 <part name="C13" library="rcl" deviceset="CPOL-EU" device="B"/>
 <part name="C14" library="rcl" deviceset="CPOL-EU" device="B"/>
 <part name="C17" library="rcl" deviceset="CPOL-EU" device="B"/>
+<part name="FCH1" library="led" deviceset="LED" device="3MM"/>
+<part name="R11" library="resistor" deviceset="R-EU_" device="M1206"/>
+<part name="FCH2" library="led" deviceset="LED" device="3MM"/>
+<part name="R16" library="resistor" deviceset="R-EU_" device="M1206"/>
+<part name="FCH3" library="led" deviceset="LED" device="3MM"/>
+<part name="R17" library="resistor" deviceset="R-EU_" device="M1206"/>
+<part name="FCH4" library="led" deviceset="LED" device="3MM"/>
+<part name="R21" library="resistor" deviceset="R-EU_" device="M1206"/>
 </parts>
 <sheets>
 <sheet>
@@ -24725,7 +24733,7 @@ package type SO</description>
 <text x="378.46" y="38.1" size="1.778" layer="105" font="vector" ratio="17">1</text>
 <wire x1="312.42" y1="93.98" x2="312.42" y2="-5.08" width="0.1524" layer="95"/>
 <wire x1="365.76" y1="93.98" x2="365.76" y2="-5.08" width="0.1524" layer="95"/>
-<text x="322.58" y="-2.54" size="2.54" layer="95" font="vector" ratio="10">PROBLEM LEDS</text>
+<text x="325.12" y="93.98" size="2.54" layer="95" font="vector" ratio="10">PROBLEM LEDS</text>
 <text x="276.86" y="-2.54" size="2.54" layer="95" font="vector" ratio="10">ALL-OK LEDS</text>
 </plain>
 <instances>
@@ -24818,8 +24826,8 @@ package type SO</description>
 <instance part="R31" gate="G$1" x="332.74" y="38.1" rot="R180"/>
 <instance part="FD2" gate="G$1" x="340.36" y="30.48" rot="R90"/>
 <instance part="R32" gate="G$1" x="332.74" y="30.48" rot="R180"/>
-<instance part="FCH" gate="G$1" x="340.36" y="20.32" rot="R90"/>
-<instance part="R33" gate="G$1" x="332.74" y="20.32" rot="R180"/>
+<instance part="FCH" gate="G$1" x="340.36" y="22.86" rot="R90"/>
+<instance part="R33" gate="G$1" x="332.74" y="22.86" rot="R180"/>
 <instance part="ZSTEP" gate="-1" x="406.4" y="76.2"/>
 <instance part="ZSTEP" gate="-2" x="406.4" y="71.12"/>
 <instance part="ZDIR" gate="-1" x="406.4" y="66.04"/>
@@ -24881,6 +24889,14 @@ package type SO</description>
 <instance part="C13" gate="G$1" x="693.42" y="58.42" rot="R180"/>
 <instance part="C14" gate="G$1" x="698.5" y="58.42" rot="R180"/>
 <instance part="C17" gate="G$1" x="703.58" y="58.42" rot="R180"/>
+<instance part="FCH1" gate="G$1" x="340.36" y="12.7" rot="R90"/>
+<instance part="R11" gate="G$1" x="332.74" y="12.7" rot="R180"/>
+<instance part="FCH2" gate="G$1" x="340.36" y="7.62" rot="R90"/>
+<instance part="R16" gate="G$1" x="332.74" y="7.62" rot="R180"/>
+<instance part="FCH3" gate="G$1" x="340.36" y="2.54" rot="R90"/>
+<instance part="R17" gate="G$1" x="332.74" y="2.54" rot="R180"/>
+<instance part="FCH4" gate="G$1" x="340.36" y="-2.54" rot="R90"/>
+<instance part="R21" gate="G$1" x="332.74" y="-2.54" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -25138,8 +25154,8 @@ package type SO</description>
 </segment>
 <segment>
 <pinref part="FCH" gate="G$1" pin="C"/>
-<wire x1="345.44" y1="20.32" x2="347.98" y2="20.32" width="0.1524" layer="91"/>
-<label x="337.82" y="20.32" size="1.778" layer="95" font="vector" ratio="10"/>
+<wire x1="345.44" y1="22.86" x2="347.98" y2="22.86" width="0.1524" layer="91"/>
+<label x="337.82" y="22.86" size="1.778" layer="95" font="vector" ratio="10"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="(PCI21/T1/OC0B)PD5"/>
@@ -25212,6 +25228,11 @@ package type SO</description>
 <pinref part="XSTEP" gate="-1" pin="KL"/>
 <junction x="411.48" y="17.78"/>
 </segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="327.66" y1="12.7" x2="325.12" y2="12.7" width="0.1524" layer="91"/>
+<label x="320.04" y="12.7" size="1.778" layer="95" font="vector" ratio="10"/>
+</segment>
 </net>
 <net name="YSTEP" class="0">
 <segment>
@@ -25225,6 +25246,11 @@ package type SO</description>
 <label x="416.56" y="45.72" size="1.778" layer="95"/>
 <pinref part="YSTEP" gate="-1" pin="KL"/>
 <junction x="411.48" y="45.72"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="327.66" y1="2.54" x2="325.12" y2="2.54" width="0.1524" layer="91"/>
+<label x="320.04" y="2.54" size="1.778" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
 <net name="ZSTEP" class="0">
@@ -25254,6 +25280,11 @@ package type SO</description>
 <pinref part="XDIR" gate="-1" pin="KL"/>
 <junction x="411.48" y="7.62"/>
 </segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="327.66" y1="7.62" x2="325.12" y2="7.62" width="0.1524" layer="91"/>
+<label x="320.04" y="7.62" size="1.778" layer="95" font="vector" ratio="10"/>
+</segment>
 </net>
 <net name="YDIR" class="0">
 <segment>
@@ -25267,6 +25298,11 @@ package type SO</description>
 <wire x1="411.48" y1="35.56" x2="416.56" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="YDIR" gate="-1" pin="KL"/>
 <junction x="411.48" y="35.56"/>
+</segment>
+<segment>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="327.66" y1="-2.54" x2="325.12" y2="-2.54" width="0.1524" layer="91"/>
+<label x="320.04" y="-2.54" size="1.778" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -25565,6 +25601,26 @@ package type SO</description>
 <wire x1="180.34" y1="127" x2="180.34" y2="124.46" width="0.1524" layer="91"/>
 <junction x="180.34" y="124.46"/>
 </segment>
+<segment>
+<pinref part="FCH1" gate="G$1" pin="C"/>
+<wire x1="345.44" y1="12.7" x2="347.98" y2="12.7" width="0.1524" layer="91"/>
+<label x="337.82" y="12.7" size="1.778" layer="95" font="vector" ratio="10"/>
+</segment>
+<segment>
+<pinref part="FCH2" gate="G$1" pin="C"/>
+<wire x1="345.44" y1="7.62" x2="347.98" y2="7.62" width="0.1524" layer="91"/>
+<label x="337.82" y="7.62" size="1.778" layer="95" font="vector" ratio="10"/>
+</segment>
+<segment>
+<pinref part="FCH3" gate="G$1" pin="C"/>
+<wire x1="345.44" y1="2.54" x2="347.98" y2="2.54" width="0.1524" layer="91"/>
+<label x="337.82" y="2.54" size="1.778" layer="95" font="vector" ratio="10"/>
+</segment>
+<segment>
+<pinref part="FCH4" gate="G$1" pin="C"/>
+<wire x1="345.44" y1="-2.54" x2="347.98" y2="-2.54" width="0.1524" layer="91"/>
+<label x="337.82" y="-2.54" size="1.778" layer="95" font="vector" ratio="10"/>
+</segment>
 </net>
 <net name="XTAL2" class="0">
 <segment>
@@ -25783,8 +25839,8 @@ package type SO</description>
 </segment>
 <segment>
 <pinref part="R33" gate="G$1" pin="2"/>
-<wire x1="327.66" y1="20.32" x2="325.12" y2="20.32" width="0.1524" layer="91"/>
-<label x="320.04" y="20.32" size="1.778" layer="95" font="vector" ratio="10"/>
+<wire x1="327.66" y1="22.86" x2="325.12" y2="22.86" width="0.1524" layer="91"/>
+<label x="320.04" y="22.86" size="1.778" layer="95" font="vector" ratio="10"/>
 </segment>
 <segment>
 <wire x1="693.42" y1="55.88" x2="685.8" y2="55.88" width="0.1524" layer="91"/>
@@ -26512,6 +26568,30 @@ package type SO</description>
 <pinref part="SJ2" gate="1" pin="1"/>
 <pinref part="IC6" gate="G$1" pin="RX"/>
 <wire x1="210.82" y1="139.7" x2="213.36" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="FCH1" gate="G$1" pin="A"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="FCH2" gate="G$1" pin="A"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="FCH3" gate="G$1" pin="A"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="FCH4" gate="G$1" pin="A"/>
+<pinref part="R21" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

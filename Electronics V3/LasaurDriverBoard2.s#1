@@ -24772,6 +24772,7 @@ Monitor all sensors and report onscreen
 Drive I2C Button Panel
 Softserial + Serial to either intercept LasaurApp or 
 Function on its own</text>
+<text x="551.18" y="190.5" size="2.1844" layer="95">128x64 ST7920 SPI LCD</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="337.82" y="134.62"/>

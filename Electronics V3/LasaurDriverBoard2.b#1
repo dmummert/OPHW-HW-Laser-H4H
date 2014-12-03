@@ -1069,6 +1069,8 @@
 <text x="91.5685625" y="2.953834375" size="1.9304" layer="16" font="vector" ratio="16" rot="MR0">Sponsored by: www.OpenBuilds.com FairShare Program</text>
 <text x="91.5652" y="2.94935625" size="1.9304" layer="32" font="vector" ratio="16" rot="MR0">Sponsored by: www.OpenBuilds.com FairShare Program</text>
 <text x="80.127178125" y="81.450390625" size="1.27" layer="16" font="vector" ratio="16" rot="MR0">Sept 2014</text>
+<text x="69.7756875" y="82.521453125" size="1.27" layer="1" font="vector" ratio="16">CC-BY-SA</text>
+<text x="69.75556875" y="82.538259375" size="1.27" layer="31" font="vector" ratio="16">CC-BY-SA</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -6053,8 +6055,8 @@ package type SO</description>
 <polygon width="0.254" layer="1">
 <vertex x="-2.415475" y="0.826315625"/>
 <vertex x="-2.415475" y="99.886315625"/>
-<vertex x="1.394525" y="103.696315625"/>
-<vertex x="97.914525" y="103.696315625"/>
+<vertex x="1.915940625" y="101.4800625"/>
+<vertex x="98.435940625" y="101.4800625"/>
 <vertex x="102.677025" y="98.933815625"/>
 <vertex x="102.677025" y="2.413815625"/>
 <vertex x="98.232025" y="-2.031184375"/>
@@ -6969,8 +6971,8 @@ package type SO</description>
 <polygon width="0.254" layer="16">
 <vertex x="-1.780475" y="2.413815625"/>
 <vertex x="-1.780475" y="100.521315625"/>
-<vertex x="2.347025" y="104.648815625"/>
-<vertex x="96.962025" y="104.648815625"/>
+<vertex x="2.60773125" y="101.25925"/>
+<vertex x="97.22273125" y="101.25925"/>
 <vertex x="104.264525" y="97.346315625"/>
 <vertex x="104.264525" y="4.001315625"/>
 <vertex x="97.914525" y="-2.348684375"/>

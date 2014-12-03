@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.000000123031" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -1062,6 +1062,12 @@
 <text x="73.5920125" y="10.785734375" size="1.9304" layer="32" font="vector" ratio="16" rot="MR0">Design by:</text>
 <text x="74.233371875" y="8.15609375" size="1.6764" layer="32" font="vector" ratio="16" rot="MR0">Peter vd Walt</text>
 <text x="74.254" y="8.159315625" size="1.6764" layer="16" font="vector" ratio="16" rot="MR0">Peter vd Walt</text>
+<text x="33.567325" y="98.245415625" size="1.4224" layer="255" font="vector" ratio="12">SIG</text>
+<text x="44.04075" y="98.140678125" size="1.4224" layer="255" font="vector" ratio="12">SIG</text>
+<text x="53.938134375" y="97.98356875" size="1.4224" layer="255" font="vector" ratio="12">SIG</text>
+<text x="64.202090625" y="98.0359375" size="1.4224" layer="255" font="vector" ratio="12">SIG</text>
+<text x="74.308946875" y="98.140678125" size="1.4224" layer="255" font="vector" ratio="12">SIG</text>
+<text x="84.7792875" y="98.245415625" size="1.4224" layer="255" font="vector" ratio="12">SIG</text>
 </plain>
 <libraries>
 <library name="adafruit">

@@ -24644,13 +24644,13 @@ package type SO</description>
 <part name="C13" library="rcl" deviceset="CPOL-EU" device="B"/>
 <part name="C14" library="rcl" deviceset="CPOL-EU" device="B"/>
 <part name="C17" library="rcl" deviceset="CPOL-EU" device="B"/>
-<part name="FCH1" library="led" deviceset="LED" device="3MM"/>
+<part name="XSTEPLED" library="led" deviceset="LED" device="3MM"/>
 <part name="R11" library="resistor" deviceset="R-EU_" device="M1206"/>
-<part name="FCH2" library="led" deviceset="LED" device="3MM"/>
+<part name="XDIRLED" library="led" deviceset="LED" device="3MM"/>
 <part name="R16" library="resistor" deviceset="R-EU_" device="M1206"/>
-<part name="FCH3" library="led" deviceset="LED" device="3MM"/>
+<part name="YSTEPLED" library="led" deviceset="LED" device="3MM"/>
 <part name="R17" library="resistor" deviceset="R-EU_" device="M1206"/>
-<part name="FCH4" library="led" deviceset="LED" device="3MM"/>
+<part name="YDIRLED" library="led" deviceset="LED" device="3MM"/>
 <part name="R21" library="resistor" deviceset="R-EU_" device="M1206"/>
 </parts>
 <sheets>
@@ -24889,13 +24889,13 @@ package type SO</description>
 <instance part="C13" gate="G$1" x="693.42" y="58.42" rot="R180"/>
 <instance part="C14" gate="G$1" x="698.5" y="58.42" rot="R180"/>
 <instance part="C17" gate="G$1" x="703.58" y="58.42" rot="R180"/>
-<instance part="FCH1" gate="G$1" x="340.36" y="12.7" rot="R90"/>
+<instance part="XSTEPLED" gate="G$1" x="340.36" y="12.7" rot="R90"/>
 <instance part="R11" gate="G$1" x="332.74" y="12.7" rot="R180"/>
-<instance part="FCH2" gate="G$1" x="340.36" y="7.62" rot="R90"/>
+<instance part="XDIRLED" gate="G$1" x="340.36" y="7.62" rot="R90"/>
 <instance part="R16" gate="G$1" x="332.74" y="7.62" rot="R180"/>
-<instance part="FCH3" gate="G$1" x="340.36" y="2.54" rot="R90"/>
+<instance part="YSTEPLED" gate="G$1" x="340.36" y="2.54" rot="R90"/>
 <instance part="R17" gate="G$1" x="332.74" y="2.54" rot="R180"/>
-<instance part="FCH4" gate="G$1" x="340.36" y="-2.54" rot="R90"/>
+<instance part="YDIRLED" gate="G$1" x="340.36" y="-2.54" rot="R90"/>
 <instance part="R21" gate="G$1" x="332.74" y="-2.54" rot="R180"/>
 </instances>
 <busses>
@@ -25602,24 +25602,24 @@ package type SO</description>
 <junction x="180.34" y="124.46"/>
 </segment>
 <segment>
-<pinref part="FCH1" gate="G$1" pin="C"/>
+<pinref part="XSTEPLED" gate="G$1" pin="C"/>
 <wire x1="345.44" y1="12.7" x2="347.98" y2="12.7" width="0.1524" layer="91"/>
-<label x="337.82" y="12.7" size="1.778" layer="95" font="vector" ratio="10"/>
+<label x="347.98" y="12.7" size="1.778" layer="95" font="vector" ratio="10"/>
 </segment>
 <segment>
-<pinref part="FCH2" gate="G$1" pin="C"/>
+<pinref part="XDIRLED" gate="G$1" pin="C"/>
 <wire x1="345.44" y1="7.62" x2="347.98" y2="7.62" width="0.1524" layer="91"/>
-<label x="337.82" y="7.62" size="1.778" layer="95" font="vector" ratio="10"/>
+<label x="347.98" y="7.62" size="1.778" layer="95" font="vector" ratio="10"/>
 </segment>
 <segment>
-<pinref part="FCH3" gate="G$1" pin="C"/>
+<pinref part="YSTEPLED" gate="G$1" pin="C"/>
 <wire x1="345.44" y1="2.54" x2="347.98" y2="2.54" width="0.1524" layer="91"/>
-<label x="337.82" y="2.54" size="1.778" layer="95" font="vector" ratio="10"/>
+<label x="347.98" y="2.54" size="1.778" layer="95" font="vector" ratio="10"/>
 </segment>
 <segment>
-<pinref part="FCH4" gate="G$1" pin="C"/>
+<pinref part="YDIRLED" gate="G$1" pin="C"/>
 <wire x1="345.44" y1="-2.54" x2="347.98" y2="-2.54" width="0.1524" layer="91"/>
-<label x="337.82" y="-2.54" size="1.778" layer="95" font="vector" ratio="10"/>
+<label x="347.98" y="-2.54" size="1.778" layer="95" font="vector" ratio="10"/>
 </segment>
 </net>
 <net name="XTAL2" class="0">
@@ -26572,25 +26572,25 @@ package type SO</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="FCH1" gate="G$1" pin="A"/>
+<pinref part="XSTEPLED" gate="G$1" pin="A"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="FCH2" gate="G$1" pin="A"/>
+<pinref part="XDIRLED" gate="G$1" pin="A"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="FCH3" gate="G$1" pin="A"/>
+<pinref part="YSTEPLED" gate="G$1" pin="A"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="FCH4" gate="G$1" pin="A"/>
+<pinref part="YDIRLED" gate="G$1" pin="A"/>
 <pinref part="R21" gate="G$1" pin="1"/>
 </segment>
 </net>

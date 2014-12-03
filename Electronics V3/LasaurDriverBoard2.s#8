@@ -24641,9 +24641,9 @@ package type SO</description>
 <part name="SJ2" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ3" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ4" library="jumper" deviceset="SJ" device=""/>
-<part name="C13" library="rcl" deviceset="CPOL-EU" device="C"/>
-<part name="C14" library="rcl" deviceset="CPOL-EU" device="C"/>
-<part name="C17" library="rcl" deviceset="CPOL-EU" device="C"/>
+<part name="C13" library="rcl" deviceset="CPOL-EU" device="B"/>
+<part name="C14" library="rcl" deviceset="CPOL-EU" device="B"/>
+<part name="C17" library="rcl" deviceset="CPOL-EU" device="B"/>
 </parts>
 <sheets>
 <sheet>
